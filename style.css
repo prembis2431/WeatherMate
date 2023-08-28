@@ -1,0 +1,116 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    background: #222;
+    background-image: url('https://source.unsplash.com/1600x900/?cityscape');
+    
+}
+
+.card{
+
+    background-color: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    /* max-height: 2000px; */
+}
+
+
+
+.search{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+button{
+
+margin: 0.9em;
+border-radius: 50%;
+border: none;
+height: 42px;
+width: 42px;
+background-color: #7c7c7c2b;
+color: white;
+outline: none;
+cursor: pointer;
+transition: 0.5s ease-in-out;
+
+}
+
+button:hover{
+
+    background-color: #7c7c7c6b;
+}
+
+h1.temp{
+
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+
+input.search-bar{
+
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 22px;
+    background-color: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100%-100px);
+    transition: 0.5s ease-in-out;
+   
+}
+
+input.search-bar:hover{
+
+    background-color: #7c7c7c6b;
+}
+
+.description{
+
+    text-transform: capitalize;
+    margin-left: 5px;
+}
+
+.weather.loading{
+
+    display: none;
+    visibility: hidden;
+    max-height: 50px;
+    position: relative;
+}
+
+.weather.loading:after{
+
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top:0;
+    left:20px;
+}
