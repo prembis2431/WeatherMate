@@ -43,7 +43,7 @@ document.querySelector(".search button").addEventListener("click", function(){
     weather.search();
 });
 
-document.querySelector(".search-bar").addEventListener("keyup", function(event){
+document.querySelector(".search-bar").addEventListener("keypress", function(event){
 
     if(event.key=="Enter"){
 
@@ -51,4 +51,3 @@ document.querySelector(".search-bar").addEventListener("keyup", function(event){
     }
 });
 
-weather.fetchWeather();
